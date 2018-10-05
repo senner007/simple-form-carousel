@@ -19,16 +19,14 @@ form {
 form > ul {
     margin: 0;
    height: 100%;   
-   /* Grrrrrrr!! */
-   overflow: hidden;
+      /* remove space between li Grrrrrrr!! */
    font-size: 0;
-
-
+   display: flex;
 }
+
 form > ul > li {
-    margin: 0;
+    position: relative;
     padding: 20px;
-    height: 100%;
     list-style: none;
     display: inline-block;
     overflow: hidden;
