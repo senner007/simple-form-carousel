@@ -69,11 +69,11 @@ function validate (currentState) {
 
     var returnValue = true;
 
-     $('form > ul > li').eq(currentState).find('input').each(function ()  {
+     $('form > ul > li').eq(currentState).find('input').each(function ()  {       
         if( !$(this)[0].checkValidity()) {      
             $('input[type="submit"]').trigger('click');
             returnValue = false;
-            return;
+            return false;     
         }
      })  
     return returnValue;
