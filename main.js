@@ -18,11 +18,12 @@ if ($('input[type="date"]')[0].type != 'date') {
 // undgå enter og tab input på sidste input på hver side
 // undgå submit og hop til næste slider side 
 $('input.last').keydown(function (event) {  
-    if (event.keyCode == 9 || event.keyCode == 13) {
+    if (event.keyCode == 9) {
         event.preventDefault();
         return false;
-    }
+    }   
 })
+
 
 $('.checkmark-js').on('click', function (event) { 
     var getHidden = $(this).parent().find('.hidden-input')[0];
@@ -39,10 +40,12 @@ $('.radio-list-js li').on('click', function (event) {
    
 })
 
-$('#submit-button').on('click', function (e) {
 
+$('#submit-button').on('click', function (e) {
+    
     e.preventDefault();
     var isValid = validate(setState())
+    if (setState() != renderForm.liLength -1 ) return false;
     if (isValid) alert('Tak for din indmeldelse')
    
 });
