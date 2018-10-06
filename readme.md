@@ -10,7 +10,7 @@ Requires node.js(with npm) https://nodejs.org
 ### To Run
 - npm run dev
 
- ### To build
+ ### To build (will delete and create new build dir)
 - npm run build
 
  ### Browser support:
