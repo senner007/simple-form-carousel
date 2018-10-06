@@ -45,7 +45,10 @@ $('#submit-button').on('click', function (e) {
     
     e.preventDefault();
     var isValid = validate(setState())
+    // this function is called on submit ???
+    // prevent final submit if not on final page
     if (setState() != renderForm.liLength -1 ) return false;
+    // replace with actual submit
     if (isValid) alert('Tak for din indmeldelse')
    
 });
