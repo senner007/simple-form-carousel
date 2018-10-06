@@ -15,7 +15,7 @@ if ($('input[type="date"]')[0].type != 'date') {
     })
 }
 
-// undgå enter og tab input på sidste input på hver side
+// undgå tab input på sidste input på hver side
 // undgå submit og hop til næste slider side 
 $('input.last').keydown(function (event) {  
     if (event.keyCode == 9) {
