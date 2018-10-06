@@ -19,6 +19,7 @@ test/integration/**/Cargo.lock
 logs
 .htaccess
 *.log
+*.zip
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

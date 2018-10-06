@@ -1,11 +1,11 @@
 
 
-import './css.css'
-import './form-styles.css'
-import './input-styles.css'
-import './box-progress.css'
+import './css/css.css'
+import './css/form-styles.css'
+import './css/input-styles.css'
+import './css/box-progress.css'
 // import $ from 'jquery';
-import './datepicker-polyfill'
+import './js/datepicker-polyfill'
 
 // undgå keyboard input i ie
 if ($('input[type="date"]')[0].type != 'date') {
