@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body,
@@ -7,13 +6,12 @@ html,
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color:rgb(64, 64, 64);
+    color: rgb(64, 64, 64);
 }
 
 html {
@@ -37,8 +35,6 @@ header {
     width: 100%;
     z-index: -1;
 }
-
-
 
 #image-logo {
     display: -webkit-box;
@@ -70,10 +66,7 @@ header {
     position: relative;
     width: 50px;
     height: auto;
-
 }
-
-
 
 #section-top {
     display: -ms-flexbox;
@@ -82,7 +75,6 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 50px;
-   
 }
 
 #section-top h1 {
@@ -101,14 +93,10 @@ header {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-/* _:-ms-lang(x), .section-top { display: block\9; } */
-
-
 #form-container {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-        flex: 1;
+    flex: 1;
     width: 100%;
     min-width: 280px;
     height: 600px;
@@ -117,8 +105,8 @@ header {
 
 #video-box {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 #iframe-container {
@@ -142,7 +130,7 @@ header {
 
 #section-middle {
 
-    color: rgb(64, 64, 64);;
+    color: rgb(64, 64, 64);
     font-weight: bold;
     margin: 50px 0px;
 }
@@ -162,7 +150,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
 #section-middle li {
@@ -171,7 +159,7 @@ header {
 }
 
 #section-middle p {
-   text-align: center;
+    text-align: center;
 }
 
 #section-middle img {
@@ -226,11 +214,9 @@ header {
 
 /* IE9+ CSS */
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {
-
     #section-top h3 {
         font-size: 16px;
     }
-
 }
 
 
@@ -239,30 +225,30 @@ header {
     #section-top {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
 
     }
 
     #form-container {
         -ms-flex-order: 1;
         -webkit-box-ordinal-group: 2;
-                order: 1;
+        order: 1;
         margin-left: 0px;
         /* for ie 11 */
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
     }
 
     #video-box {
         -ms-flex-order: 2;
         -webkit-box-ordinal-group: 3;
-                order: 2;
+        order: 2;
         /* for ie 11 */
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
     }
 
     #video-box h1,

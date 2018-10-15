@@ -5,18 +5,23 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: 6px 10px 16px 10px;
     font-family: sans-serif;
 }
 
-.flex-list  a {
+.flex-list a {
     text-decoration: none;
-    color:blue;
+    color: blue;
 }
 
 
 .flex-list>div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin: 0px 10px;
 
@@ -27,6 +32,8 @@
 } */
 
 .flex-list>p {
+    -webkit-box-flex: 50;
+    -ms-flex: 50;
     flex: 50;
     margin: 8px 10px;
     font-size: 14px;
@@ -37,15 +44,33 @@
 }
 
 input {
+    background: transparent;
     width: 100%;
     height: 32px;
-    
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: transparent;
     border: none;
     /* border-top: 2px solid rgb(16,16,16); */
     border-bottom: 2px solid rgb(64, 64, 64);
     padding: 4px;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #C8C8C8;
+}
+
+
+
+:-ms-input-placeholder {
+    color: #C8C8C8;
+}
+
+
+
+::-ms-input-placeholder {
+    color: #C8C8C8;
 }
 
 
@@ -73,6 +98,8 @@ label {
 /* checkmark-js-controlled */
 
 .checkmark-js {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     height: 26px;
     top: 8px;
@@ -95,8 +122,8 @@ label {
 /* radiobuttons-js-controlled */
 
 .radio-list-js {
-    font-size: 14px;
     color: rgb(64, 64, 64);
+    font-size: 14px;
     margin: 0px 10px;
 }
 
@@ -133,18 +160,18 @@ label {
     z-index: -1;
     position: relative;
     left: 20px;
-
 }
 
 #submit-button {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #c00;
+    color: whitesmoke;
     font-size: 22px;
     color: rgb(64, 64, 64);
     margin-top: 30px;
-    flex: 1;
     margin: 50px;
-    border: 2px solid  #c00;
+    border: 2px solid #c00;
     border-radius: 3px;
-    color: whitesmoke;
-    background: #c00;
-     
 }
