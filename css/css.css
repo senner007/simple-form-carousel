@@ -36,7 +36,7 @@ header {
     z-index: -1;
 }
 
-#image-logo {
+#image-logo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
