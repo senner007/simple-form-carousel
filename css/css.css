@@ -74,9 +74,7 @@ header {
 
 }
 
-iframe {
-    border: none;
-}
+
 
 #section-top {
     max-width: 1200px;
@@ -121,6 +119,12 @@ iframe {
     flex: 3;
 }
 
+#iframe-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+}
+
 #iframe-container iframe {
 
     background-color: ghostwhite;
@@ -131,24 +135,8 @@ iframe {
     position: absolute;
     top: 0;
     left: 0;
-
+    border: none;
 }
-
-#iframe-container {
-    width: 100%;
-    position: relative;
- 
-
-}
-
-
-#iframe-container:before {
-    content: '';
-    display: block;
-    padding-top: 56.25%;
-  
-}
-
 
 #section-middle {
 
