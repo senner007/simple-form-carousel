@@ -1,6 +1,12 @@
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0;
     max-width: 600px;
@@ -9,29 +15,29 @@ nav ul {
 }
 
 #progress-bar li {
+    background: ghostwhite;
     width: 5%;
     height: 25px;
-    background: ghostwhite;
     list-style: none;
     border-radius: 1px;
     padding: 4px;
     border: 2px solid #c00;
-    
+
 }
 
 #progress-bar li span {
+    background: ghostwhite;
     width: 80%;
     height: 90%;
     display: block;
     margin: 1px auto;
-    background: ghostwhite;   
+
 }
 
 #progress-bar .border-line {
     height: 2px;
     width: 10%;
     visibility: hidden;
-
 }
 
 #progress-bar .long {
@@ -48,9 +54,9 @@ nav ul {
 }
 
 #progress-bar-text li {
+    color: ghostwhite;
     font-size: 16px;
     width: 25%;
-    color: ghostwhite;
     text-align: center;
     background: none;
     padding: 5px;
@@ -68,7 +74,6 @@ nav ul {
 .color-animate {
     background-color: #c00 !important;
     -webkit-transition: background-color 0.4s ease;
-    -moz-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
 }

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body,
@@ -6,13 +5,13 @@ html,
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
 a {
     text-decoration: none;
-    color:rgb(64, 64, 64);
+    color: rgb(64, 64, 64);
 }
 
 html {
@@ -28,18 +27,16 @@ html {
 }
 
 header {
+    color: ghostwhite;
     top: 0;
     height: 400px;
     background: #c00;
-    color: ghostwhite;
     position: absolute;
     width: 100%;
     z-index: -1;
 }
 
-
-
-#image-logo {
+#image-logo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,10 +51,8 @@ header {
 }
 
 #image-logo span {
-
-    display: inline-block;
-    background: white;
     color: rgb(24, 24, 24);
+    background: white;
     font-weight: bold;
     font-size: 16px;
     padding-right: 7px;
@@ -71,54 +66,53 @@ header {
     position: relative;
     width: 50px;
     height: auto;
-
-}
-
-iframe {
-    border: none;
 }
 
 #section-top {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 50px;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 #section-top h1 {
+    color: ghostwhite;
     margin-bottom: 20px;
     margin-right: 0;
-    color: ghostwhite;
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
 }
 
 #section-top h3 {
+    color: ghostwhite;
     margin-top: 10px;
     margin-bottom: 40px;
-    color: ghostwhite;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-
-
 }
 
-
-/* _:-ms-lang(x), .section-top { display: block\9; } */
-
-
 #form-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     width: 100%;
-
     min-width: 280px;
     height: 600px;
     margin-left: 50px;
-    flex: 3;
 }
 
 #video-box {
-    flex: 3;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#iframe-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
 }
 
 #iframe-container iframe {
@@ -131,28 +125,12 @@ iframe {
     position: absolute;
     top: 0;
     left: 0;
-
+    border: none;
 }
-
-#iframe-container {
-    width: 100%;
-    position: relative;
- 
-
-}
-
-
-#iframe-container:before {
-    content: '';
-    display: block;
-    padding-top: 56.25%;
-  
-}
-
 
 #section-middle {
 
-    color: rgb(64, 64, 64);;
+    color: rgb(64, 64, 64);
     font-weight: bold;
     margin: 50px 0px;
 }
@@ -168,8 +146,10 @@ iframe {
 }
 
 #section-middle ul {
-    display: flex;
+    display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -179,7 +159,7 @@ iframe {
 }
 
 #section-middle p {
-   text-align: center;
+    text-align: center;
 }
 
 #section-middle img {
@@ -234,33 +214,40 @@ iframe {
 
 /* IE9+ CSS */
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {
-
     #section-top h3 {
         font-size: 16px;
     }
-
 }
 
 
 @media only screen and (max-width: 900px) {
 
     #section-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
     }
 
     #form-container {
         -ms-flex-order: 1;
+        -webkit-box-ordinal-group: 2;
         order: 1;
         margin-left: 0px;
         /* for ie 11 */
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
 
     #video-box {
         -ms-flex-order: 2;
+        -webkit-box-ordinal-group: 3;
         order: 2;
         /* for ie 11 */
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
 
