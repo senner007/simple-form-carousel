@@ -1,5 +1,5 @@
 # Simple form
-https://www.codetoshow.com/simple-form-carousel
+https://www.nielshtg.dk/simple-form-carousel
 
 ##
 Requires node.js(with npm) https://nodejs.org
