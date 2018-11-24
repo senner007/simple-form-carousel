@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --out-dir build/ --public-url ./",
-    "prebuild": "rm -rf build"
+    "build": "parcel build index.html --out-dir build/ --public-url ./"
   },
   "keywords": [],
   "author": "",
