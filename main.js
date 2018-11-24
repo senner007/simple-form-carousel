@@ -54,13 +54,27 @@ $('#submit-button').on('click', function (e) {
 });
 
 
+
 $('.button-container button').on('click', function (e) {
+
+    
 
     var change = $(this).attr('id') === 'next-button' ? 1 : -1
     // valider inputs på side hvis gå frem
-    var isValid = change > 0 ? validate(setState()) :  true
+    var isValid = change > 0 ? validate(setState()) : true
+    if (change == -1) clearValidationMessage(setState());
     if (isValid)  renderForm.render(setState(change))
 })
+
+// clears/hides validation error messages on going back in slider
+function clearValidationMessage(currentState) {
+    $('form > ul > li').eq(currentState).find('input').each(function ()  {       
+        if( !$(this)[0].checkValidity()) {      
+            $(this).focus().blur();
+            return false;     
+        }
+     })  
+}
 
 function validate (currentState) {
 
