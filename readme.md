@@ -20,4 +20,5 @@ Requires node.js(with npm) https://nodejs.org
   - Edge
   - Safari IOS
   - Chrome IOS
+  - Chrome Android
 
