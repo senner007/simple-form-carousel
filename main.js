@@ -73,11 +73,10 @@ function clearValidationMessage(currentState) {
 
 function validate(currentState) {
 
-    var dateval = $('input[type="date"]').val();
-
     //https: //stackoverflow.com/questions/39514306/html-setcustomvalidity-oninvalid-and-oninput-explanation
 
     var dateMessage = (function () {
+        var dateval = $('input[type="date"]').val();
         if (new Date(dateval).getTime() < new Date().getTime() && new Date().toDateString() !== new Date(dateval).toDateString()) {
             return  "Dato må ikke ligge før dags dato"    
         } 
