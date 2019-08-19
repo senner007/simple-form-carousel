@@ -76,11 +76,14 @@ function validate(currentState) {
     var dateval = $('input[type="date"]').val();
 
     //https: //stackoverflow.com/questions/39514306/html-setcustomvalidity-oninvalid-and-oninput-explanation
+
+    var dateMessage = (function () {
         if (new Date(dateval).getTime() < new Date().getTime() && new Date().toDateString() !== new Date(dateval).toDateString()) {
-            $('input[type="date"]')[0].setCustomValidity('Dato må ikke ligge før dags dato')
-        } else {
-            $('input[type="date"]')[0].setCustomValidity('')
-        }
+            return  "Dato må ikke ligge før dags dato"    
+        } 
+        return "";  
+    })();
+    $('input[type="date"]')[0].setCustomValidity(dateMessage);
 
     var returnValue = true;
 
