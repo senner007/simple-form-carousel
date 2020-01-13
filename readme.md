@@ -1,5 +1,3 @@
-# Simple form
-https://www.nielshtg.dk/simple-form-carousel
 
 ##
 Requires node.js(with npm) https://nodejs.org
